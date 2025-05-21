@@ -68,22 +68,22 @@ const TrafficLight = () => {
 	return (
 		<div>
 			<div className="d-flex justify-content-center">
-				<div className="text-center semaforo bg-dark">
+				<div className="text-center semaforo bg-dark border">
 					<div onClick={handleRedLight} className={`rounded-circle bg-danger mx-auto mt-5 color ${redColor ? ' luz-roja' : ''}`}></div>
 					<div onClick={handleOrangeLight} className={`rounded-circle bg-warning mx-auto mt-4 color ${orangeColor ? ' luz-naranja' : ''}`}></div>
 					<div onClick={handleGreenLight} className={`rounded-circle bg-success mx-auto mt-4 color ${greenColor ? ' luz-verde' : ''}`}></div>
 				</div>
 			</div>
-			<div className="bg-dark mx-auto post-one "></div>
-			<div className="d-flex justify-content-center bg-dark rounded mx-auto p-3 gap-4 icons">
+			<div className="bg-dark mx-auto border post-one"></div>
+			<div className="d-flex justify-content-center bg-dark rounded mx-auto p-3 gap-4 border icons">
 				<span><i className={`fa-solid fa-person fa-2xl text-danger ${changeIcon? ' d-none' : ''}`}></i></span>
 				<span><i className={`fa-solid fa-person-walking fa-2xl text-success ${changeIcon? '' : ' d-none'}`}></i></span>
 			</div>
-			<div className="bg-dark mx-auto post-two"></div>
-			<div className="d-flex justify-content-center bg-dark rounded mx-auto p-2 gap-4 pulsador">
+			<div className="bg-dark mx-auto border post-two"></div>
+			<div className="d-flex justify-content-center bg-dark rounded mx-auto p-2 gap-4 border pulsador">
 				<button onClick={handlePress} className="btn btn-outline-primary bg-dark">{textButton}</button>
 			</div>
-			<div className="bg-dark mx-auto post-three mb-auto"></div>
+			<div className="bg-dark mx-auto post-three mb-auto border"></div>
 		</div>
 	);
 };
